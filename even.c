@@ -3,12 +3,13 @@ int main()
 {
 	int a;
 	scanf("%d",&a);
-	if(a>0)
-	printf("Positive");
+	int c=a%2;
+	if (c==0)
+	printf("Even");
 	else
-	if(a==0)
-	printf("Zero");
+	if(c==1)
+	printf("Odd");
 	else
-	printf("Negative");
+	printf("invalid");
 	return 0;
 }
